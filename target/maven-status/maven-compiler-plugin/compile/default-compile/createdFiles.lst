@@ -1,0 +1,10 @@
+com\example\webscraper\controller\HomeController.class
+com\example\webscraper\service\HomeService.class
+com\example\webscraper\configs\ApplicationConfiguration.class
+com\example\webscraper\model\EventInfo.class
+com\example\webscraper\model\ScrapWebsite.class
+com\example\webscraper\WebScraperApplication.class
+com\example\webscraper\repository\ScrapWebsiteRepository.class
+com\example\webscraper\service\Scraper.class
+com\example\webscraper\service\JsonValidator.class
+com\example\webscraper\repository\EventInfoRepository.class

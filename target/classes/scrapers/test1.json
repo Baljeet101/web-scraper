@@ -1,0 +1,11 @@
+{
+  "websitename": "Computerworld",
+  "url" : "https://www.computerworld.com/article/3313417/tech-event-calendar-shows-conferences-and-it-expos-updated.html",
+  "mainelement" : "table#cwsearchabletable > tbody > tr",
+  "eventname" : "th",
+  "location" : "td:nth-child(5)",
+  "startdate" : "td:nth-child(3)",
+  "startdateformat": "yyyy-MM-dd",
+  "enddate": "td:nth-child(4)",
+  "enddateformat": "yyyy-MM-dd"
+}

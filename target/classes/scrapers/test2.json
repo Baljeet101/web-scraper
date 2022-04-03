@@ -1,0 +1,11 @@
+{
+  "websitename": "Techmeme",
+  "url" : "https://www.techmeme.com/events",
+  "mainelement" : "#events > div",
+  "eventname" : "div > a > div:nth-child(2)",
+  "location" : "div > a > div:nth-child(3)",
+  "startdate" : "div > a > div:nth-child(1)",
+  "startdateformat": "function handle(eventDate){\n\tvar eventDateTemp = eventDate;\n    var returnObj = {\n        valDate : '',\n        format : 'MMM dd yyyy'\n    };\n\tif(eventDateTemp.indexOf('-') > 0){\n\t\teventDateTemp = eventDateTemp.split('-')[0]\n        eventDateTemp = eventDateTemp + ' ' + new Date().getFullYear()\n        \n\t} \n\telse{\n        if(eventDateTemp.trim().length > 2){\n        eventDateTemp = eventDateTemp + ' ' + new Date().getFullYear()\n        }else{\n            eventDateTemp = new Date().getMonth() + ' ' + new Date().getDate() + ' ' + new Date().getFullYear();\n        }\n\t}\n    returnObj.valDate = eventDateTemp;\n    return returnObj;\n}",
+  "enddate": "div > a > div:nth-child(1)",
+  "enddateformat": "function handle(eventDate){\n\tvar eventDateTemp = eventDate;\n    var month = '';\n    var day = '';\n    var returnObj = {\n        valDate : '',\n        format : 'MMM dd yyyy'\n    };\n\tif(eventDateTemp.indexOf('-') > 0){\n\t\tmonth = eventDateTemp.split('-')[0]\n\t\tday = eventDateTemp.split('-')[1]\n\n        month = month.split(' ')[0]\n        eventDateTemp = month + ' ' + day + ' ' + new Date().getFullYear()\n        \n\t} \n\telse{\n            eventDateTemp = new Date().getMonth() + ' ' + new Date().getDate() + ' ' + new Date().getFullYear();\n        }\n    returnObj.valDate = eventDateTemp;\n    return returnObj;\n}"
+}
